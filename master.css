@@ -1,7 +1,7 @@
 /* ---------- google fonts ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* font-family: 'Lato', sans-serif; */
 
 /* ---------- basics ---------- */
 *,
@@ -12,7 +12,6 @@
 
 body {
     background-color: #444859;
-    /* font-family: 'Lato', sans-serif; */
     margin: 0;
     min-height: 100vh;
 }
@@ -33,16 +32,17 @@ p {
 }
 
 a {
-    color: #8fbcf3;
-    color: #77abff;
     color: #80b1ff;
+    color: #8bb8ff;
+    color: #8bbeff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #9cc8ff;
     color: #86b4ff;
+    color: #8bb8ff;
+    color: #8bbeff;
 }
 
 dl, ol, ul {
@@ -75,12 +75,9 @@ dl, ol, ul {
     justify-content: space-between;
     align-items: center;
     border-radius: 400px;
-
-    background-color: rgb(18 21 28 / 90%);
     background-color: rgb(18 20 28 / 90%);
     box-shadow: 0 2px 8px rgb(33 34 42 / 50%);
     backdrop-filter: saturate(180%) blur(20px);
-
     padding: 0.425rem 1.25rem;
     position: sticky;
     top: 2rem;
@@ -108,11 +105,6 @@ dl, ol, ul {
     transition: all .1s ease;
     cursor: pointer;
     color: #868b9b;
-    /* color: #8fbcf3; */
-    /* color: #71b1ff; */
-    /* color: #71a7ff; */
-    /* color: #77abff; */
-    /* color: #80b1ff; */
 }
 
 .user-control__user:hover {
@@ -120,24 +112,17 @@ dl, ol, ul {
 }
 
 .user-control__user:hover .user-control__username  {
-    color: #9ca1b3;
-    color: #d2d6e0;
-    color: #71b1ff;
-    color: #8fbcf3;
-    color: #86b4ff;
     color: #8bb8ff;
 }
 
 .user-control__username {
     font-size: 13px;
     line-height: 1;
-    margin: 0 6px 0 8px;
     margin: 0 3px 0 8px;
 }
 
 .user-control__user-img {
     height: 30px;
-    padding: 1px;
     border-radius: 100px;
     padding: 4px;
 }
@@ -150,7 +135,6 @@ dl, ol, ul {
 }
 
 .user-control__menu:hover {
-    color: #afb2ba;
     color: #b6b9ca;
 }
 
@@ -197,7 +181,7 @@ dl, ol, ul {
 }
 .content-table::-webkit-scrollbar-thumb {
     background: #8fbcf3;
-    background: #8bb8ff;
+    background: #8bbeff;
     border-radius: 20px;
     transition: all .5s ease;
 }
@@ -251,8 +235,6 @@ dl, ol, ul {
 }
 
 .content-table-list__header {
-    background-color: rgb(26 32 38 / 40%);
-    background-color: rgb(26 32 38 / 30%);
     background-color: rgb(26 26 38 / 45%);
     border-radius: 30px;
     margin-bottom: 10px;
@@ -265,12 +247,16 @@ dl, ol, ul {
 
 .content-table-list__header:hover h4 {
     /* color: #9abae2; */
+    /* color: #8bb8ff; */
+    /* color: rgb(153 193 255 / 90%); */
+    /* color: rgb(153 200 255 / 90%); */
+    /* color: rgb(165 202 245 / 90%); */
 }
 
 .content-table-list__header h4 {
     color: rgba(187, 190, 200, 0.9);
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .4px;
     line-height: 1.15;
     margin: 0;
@@ -365,11 +351,11 @@ dl, ol, ul {
 .server-info__subtitle {
     font-size: .975rem;
     letter-spacing: .5px;
-    margin: 10px 0 8px;
+    margin: 14px 0 8px;
     font-weight: 500;
     font-size: .875rem;
     color: #c3c6ce;
-
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .server-info__short-introduction {
@@ -381,6 +367,7 @@ dl, ol, ul {
     /* background-color: rgb(55 58 73 / 80%); */
     margin: 16px auto 0;
     margin: 10px auto 0;
+    margin: auto;
     width: fit-content;
     font-size: 10px;
 }
@@ -400,21 +387,25 @@ dl, ol, ul {
 }
 
 .server-info__social-links a {
-    color: rgb(189 193 209 / 80%);
-    background-color: rgb(81 85 102 / 85%);
-    font-size: 12px;
+    color: rgb(181 186 205 / 90%);
+    background-color: rgb(81 84 102 / 90%);
+    font-size: 13px;
     border-radius: 5.5px;
     margin: 0 0.25rem;
     cursor: pointer;
     text-decoration: none;
-    padding: 4px;
+    padding: 3px 5px 3px 4px;
     width: 26px;
-    height: 26px;
+    height: 25px;
 }
 
 .server-info__social-links a:hover {
+    color: #97c4ff;
+    background-color: rgb(50 54 67 / 68%);
     color: #d5d8e4;
+    color: #e8ebf7;
     background-color: rgb(89, 93, 110);
+    background-color: rgb(96, 100, 117);
 }
 
 .server-info__tags {
@@ -450,6 +441,9 @@ dl, ol, ul {
 
     border: 1px solid #8bb8ff;
     color: #8bb8ff;
+
+    border: 1px solid #8bbeff;
+    color: #8bbeff;
 }
 
 .server-info__tag:hover {
@@ -475,7 +469,7 @@ dl, ol, ul {
 
 .main {
     margin-top: 3rem;
-    margin-top: 3.75rem;
+    margin-top: 3.5rem;
 }
 
 .main-content-wrap {
@@ -485,6 +479,7 @@ dl, ol, ul {
 .articles {
     width: 78%;
     margin-right: 3.5rem;
+    padding-top: 0.25rem;
 }
 
 article {
@@ -563,11 +558,13 @@ article iframe:last-child {
     color: rgb(45 49 61);
     display: block;
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.2rem;
+    /* margin-bottom: 1.125rem; */
 
-    letter-spacing: .25px;
+    letter-spacing: .4px;
     padding: 7px 12px;
     padding: 8px 12px;
+    padding: 9px 12px;
     font-weight: 500;
     font-weight: 400;
     margin-top: -1.5rem;
@@ -585,6 +582,7 @@ article iframe:last-child {
     background-color: rgb(28 30 39 / 34%);
     background-color: rgb(28 30 39 / 32%);
     background-color: rgb(28 30 39 / 28%);
+
     /* background-color: rgb(28 30 39 / 28%); */
 
     /* background-color: rgb(26 32 38 / 50%); */
@@ -594,6 +592,19 @@ article iframe:last-child {
     transition: all .25s ease;
     color: rgba(143, 188, 243, 0.9);
     color: rgba(139, 183, 255, 0.85);
+    color: rgb(153 200 255 / 85%);
+    color: rgb(153 198 255 / 88%);
+    color: rgb(153 198 255 / 70%);
+    color: rgb(160 210 255 / 70%);
+    color: rgb(180 213 255 / 75%);
+    /* color: #afb2ba; */
+    /* background-color: rgb(153 198 255 / 88%);
+    color: white; */
+    /* color: #8bb8ff; */
+    background-color: rgb(28 30 39 / 76%);
+    background-color: rgb(28 30 39 / 38%);
+    background-color: rgb(28 30 39 / 46%);
+    /* border: 1.5px solid transparent; */
 }
 
 .article-section-title:hover {
@@ -624,8 +635,27 @@ article iframe:last-child {
     background-color: rgba(94, 97, 116, 0.35);
     background-color: rgb(28 30 39 / 46%);
     background-color: rgb(28 30 39 / 50%);
+    background-color: rgb(28 30 39 / 60%);
+
+    background-color: rgb(28 30 39 / 76%);
+    background-color: rgb(28 30 39 / 28%);
+    background-color: rgb(28 30 39 / 48%);
+    background-color: rgb(28 32 39 / 40%);
+    background-color: rgb(28 30 39 / 76%);
     color: rgb(229 232 239 / 90%);
     color: #8bb8ff;
+    color: rgb(153 200 255 / 100%);
+
+    /* background-color: rgb(153 198 255 / 88%); */
+    color: white;
+    color: rgb(153 198 255 / 88%);
+    color: rgb(153 200 255 / 100%);
+    color: rgb(165, 207, 254);
+    color: rgb(179 215 255);
+
+    /* border: 1.5px solid rgb(28 30 39 / 76%); */
+    /* background-color: transparent; */
+    /* background-color: rgb(28 30 39 / 20%); */
     /* color: rgb(229 232 239 / 95%); */
 
     /* background-color: rgba(110, 113, 133, 0.35); */
@@ -943,7 +973,7 @@ article iframe:last-child {
     display: flex;
     align-items: center;
     color: #afb2ba;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .server-members__icon {
@@ -958,10 +988,12 @@ article iframe:last-child {
 .server-members__count {
     color: rgba(175, 178, 186, 0.4);
     font-size: 12px;
+    font-size: 11px;
 }
 
 .server-members__list {
     max-height: 49.75vh;
+    max-height: 406px;
     overflow: auto;
 }
 
@@ -974,11 +1006,13 @@ article iframe:last-child {
 
 .server-members__list::-webkit-scrollbar-track {
     background: #2c303b;
+    background: #2b2e35;
     border-radius: 20px;
 }
 
 .server-members__list::-webkit-scrollbar-thumb {
     background: rgb(62, 67, 83);
+    background: rgb(66, 71, 87);
     border-radius: 20px;
     transition: all .5s ease;
 }
@@ -992,10 +1026,13 @@ article iframe:last-child {
 .server-member {
     display: flex;
     align-items: center;
-    padding: 2px 6px;
+    padding: 1px 6px;
+    /* padding: 3px 6px; */
     transition: all .1s ease;
     border-radius: 5px;
     margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .server-member:hover {
@@ -1023,6 +1060,7 @@ article iframe:last-child {
     color: #838999;
     font-size: 13.5px;
     font-size: 13px;
+    font-size: 12.5px;
     letter-spacing: .25px;
 }
 
